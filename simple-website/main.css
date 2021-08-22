@@ -1,0 +1,94 @@
+:root{
+    --black: #000000;
+    --navyBlue: rgb(104, 144, 255);
+    --grey: #292929;
+    --white: white;
+    --softWhite: #fffffff3;
+    --darkBlue: rgb(45, 79, 173);
+    --lightGray: #a8a8a8;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: Roboto;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background: var(--bg);
+}
+
+h1, h3{
+    font-family: monospace;
+    text-align: center;
+}
+
+img{
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    align-self: center;
+    border-radius:10px;
+}
+
+form{
+    border-radius: 10px;
+    width: 400px;
+    background: var(--formColor);
+    font-family: Roboto;
+    font-weight: 550;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+input{
+    width: 200px;
+    height: 2em;
+    border-radius: 3px;
+    border: none;
+    margin: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#submit{
+    margin-bottom: 20px;
+    width:100px;
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    background: var(--buttonColor);
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+.toggle{
+    margin: 50px;
+    width:150px;
+    height: 3em;
+    font-size:1em;
+    font-weight: 550;
+    border-radius:5px;
+    background: var(--buttonColor);
+}
+
+.light-theme{
+    --fontColor:var(--black);
+    --bg: var(--white);
+    --formColor: var(--navyBlue);
+    --buttonColor: var(--white);
+}
+.dark-theme{
+    --fontColor: var(--softWhite);
+    --bg: var(--grey);
+    --formColor: var(--darkBlue);
+    --buttonColor: var(--lightGray);
+}
+
+
+
