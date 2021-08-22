@@ -16,7 +16,7 @@ window.addEventListener("load", ()=>{
             lon = position.coords.longitude;
             lat = position.coords.latitude;
 
-            const apiID = "9986230831a410fb97bd0f3c2929b0d2";
+            const apiID = "";
 
             const apiURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
             `lon=${lon}&appid=${apiID}`;
