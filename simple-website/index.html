@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Simple Website
+    </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+   <h1>Hey There!</h1>
+   <h3>Fill up this form</h3>
+    <form id = fillupForm>
+      <div id class = "form-group">
+        <label id="profile-label" for="profile" width="400" height="400">
+            <img src="login-illustration.png" alt="Login">
+        </label>
+      </div>
+      <div class = "form-group">
+        <label id="name-label" for="username">
+        Username
+        </label>
+        <input 
+               type="text"
+               id = "username"
+               name = "username"
+               class = "form-element"
+               placeholder = "Enter your username"
+               required
+        />
+      </div>
+      <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-element"
+               placeholder="Enter your email"
+               required
+        />
+      </div>
+      <div class="form-group">
+        <label id="password-label" for="password">Password</label>
+        <input
+               type="password"
+               name="password"
+               id="password"
+               class="form-element"
+               placeholder="Enter your password"
+               required
+        />
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+           Login
+        </button>
+      </div>
+    </form>
+    <button class="toggle">
+    Toggle Theme
+    </button>
+    <script src="app.js"></script>
+    <noscript>Please activate JavaScript.</noscript>
+</body>
+</html>
